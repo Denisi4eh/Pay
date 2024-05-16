@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CoinPay</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #f0e68c, #e9d75a, #e3c931, #d7b718, #c8a50f);
+      background-size: 300% 300%;
+      animation: gradientAnimation 2s ease infinite;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .stripe {
+      height: 5px;
+      background-color: #f0a500; /* Желтый цвет */
+      width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #f0a500; /* Желтый цвет для заголовка */
+      font-size: 3em;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333; /* Темно-серый цвет для подзаголовка */
+      font-size: 1.5em;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      width: 100%;
+    }
+
+    button {
+      background-color: #ffc107; /* Желтый цвет для кнопок */
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1.2em;
+    }
+
+    button:hover {
+      background-color: #e0a800; /* Более светлый желтый при наведении */
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .benefits {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .benefit {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex: 1 0 250px; /* Задаем минимальную ширину */
+    }
+
+    .benefit h3 {
+      color: #f0a500;
+    }
+
+    .benefit p {
+      margin: 10px 0;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CoinPay</h1>
+    <div class="stripe"></div>
+    <h2>Выбери способ оплаты</h2>
+    <div class="button-container">
+      <button onclick="window.location.href='sbpaut.html'">СБП</button>
+      <button onclick="window.location.href='cardaut.html'">Перевод на карту</button>
+      <button onclick="window.location.href='payeeraut.html'">Payeer</button>
+    </div>
+    <div class="content">
+      <h2>Преимущества CoinPay</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <h3>Быстрота</h3>
+          <p>Оплати за считанные секунды!</p>
+        </div>
+        <div class="benefit">
+          <h3>Безопасность</h3>
+          <p>Все операции защищены современными технологиями.</p>
+        </div>
+        <div class="benefit">
+          <h3>Удобство</h3>
+          <p>Выбирай любой удобный тебе способ оплаты.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
